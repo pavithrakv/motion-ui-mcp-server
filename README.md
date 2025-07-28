@@ -46,6 +46,14 @@ Add to your Claude Desktop MCP settings file (usually located at `%APPDATA%\Clau
 }
 ```
 
+#### Windows Users - Claude CLI Installation
+
+Windows users can add the MCP server to Claude using the Claude CLI:
+
+```bash
+claude mcp add motionui -e GITHUB_PERSONAL_ACCESS_TOKEN=<token> -- cmd /c npx -y motion-ui-mcp-server
+```
+
 ### Other MCP Clients
 
 For other MCP-compatible clients, add to your MCP settings file:
