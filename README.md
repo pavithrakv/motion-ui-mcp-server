@@ -13,7 +13,7 @@ A Model Context Protocol (MCP) server for the Motion animation library, providin
 ## Installation
 
 ```bash
-npm install @motion/motion-ui-mcp-server
+npm install @pavi/motion-ui-mcp-server
 ```
 
 ## Usage
@@ -22,25 +22,40 @@ npm install @motion/motion-ui-mcp-server
 
 ```bash
 # Run the server
-npx motion-ui-mcp-server
+npx @pavi/motion-ui-mcp-server
 
 # With GitHub API key for enhanced functionality
-npx motion-ui-mcp-server --github-api-key YOUR_TOKEN
+npx @pavi/motion-ui-mcp-server --github-api-key YOUR_TOKEN
 
 # Or using environment variable
-GITHUB_PERSONAL_ACCESS_TOKEN=YOUR_TOKEN npx motion-ui-mcp-server
+GITHUB_PERSONAL_ACCESS_TOKEN=YOUR_TOKEN npx @pavi/motion-ui-mcp-server
 ```
 
-### MCP Configuration
+### Claude Desktop Configuration
 
-Add to your MCP settings file:
+Add to your Claude Desktop MCP settings file (usually located at `%APPDATA%\Claude\claude_desktop_config.json` on Windows or `~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
 
 ```json
 {
   "mcpServers": {
     "motion-ui": {
       "command": "npx",
-      "args": ["@motion/motion-ui-mcp-server"]
+      "args": ["@pavi/motion-ui-mcp-server"]
+    }
+  }
+}
+```
+
+### Other MCP Clients
+
+For other MCP-compatible clients, add to your MCP settings file:
+
+```json
+{
+  "mcpServers": {
+    "motion-ui": {
+      "command": "npx",
+      "args": ["@pavi/motion-ui-mcp-server"]
     }
   }
 }
