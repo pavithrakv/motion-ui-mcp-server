@@ -1,5 +1,5 @@
 {
-  "name": "@motion/motion-ui-mcp-server",
+  "name": "@pavui/motion-ui-mcp-server",
   "version": "1.0.0",
   "description": "A Model Context Protocol (MCP) server for Motion animation library, providing AI assistants with access to Motion components, APIs, examples, and documentation.",
   "type": "module",
